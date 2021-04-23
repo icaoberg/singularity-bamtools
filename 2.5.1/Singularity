@@ -1,28 +1,13 @@
 Bootstrap: docker
-From: debian:buster
+From: quay.io/biocontainers/bamtools:2.5.1--he513fc3_6
 
 %labels
     AUTHOR icaoberg
     EMAIL icaoberg@psc.edu
-    WEBSITE http://www.andrew.cmu.edu/~icaoberg
+    WEBSITE http://github.com/icaoberg/singularity-bamtools
     VERSION 2.5.1
 
 %post
-    apt-get update
-    apt-get install -y --no-install-recommends apt-utils bzip2 build-essential
-    apt-get update --fix-missing
+   rm /etc/resolv.conf
 
 ####################################################################################
-%appinstall bamtools
-    apt-get install -y wget
-    wget https://github.com/pezmaster31/bamtools/archive/v2.5.1.tar.gz
-    tar -xjvf v2.5.1.tar.gz && v2.5.1.tar.gz
-    mkdir /opt/bamtools
-    cd bamtools-2.5.1 && mkdir build && cd build
-    cmake -Wno-dev -DCMAKE_INSTALL_PREFIX=/opt/bamtools -DASSIMP_BIN_INSTALL_DIR=$(pwd) ..
-    
-%apphelp bamtools
-    /opt/bamtools/bamtools --help
-
-%apprun samtools
-    /opt/bamtools/bamtools "$@"

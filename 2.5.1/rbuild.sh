@@ -3,7 +3,7 @@
 IMAGE=singularity-bamtools-2.5.1.sif
 DEFINITION=Singularity
 
-sudo singularity build $IMAGE $DEFINITION
+singularity build --remote $IMAGE $DEFINITION
 
 if [ -f $IMAGE ]; then
 	exit 0
