@@ -1,8 +1,6 @@
-# README
+# singularity-bamtools
+[![Build Status](https://www.travis-ci.com/icaoberg/singularity-bamtools.svg?branch=main)](https://www.travis-ci.com/icaoberg/singularity-bamtools)
 
-Source code can be found [here](https://github.com/pezmaster31/bamtools). BamTools provides both a programmer's API and an end-user's toolkit for handling BAM files.
-
-## About
 Source code repository can be found [here](https://github.com/trinityrnaseq/trinityrnaseq).
 
 ## Building the container for Bridges (or similar)
@@ -26,16 +24,17 @@ Copy the
 
 to `/opt/packages/bamtools/2.5.1`.
 
-Copy the file `modulefile` to `/opt/modules/bamtools` as `2.5.1`.
+Copy the file `modulefile.lua` to `/opt/modules/bamtools` as `2.5.1.lua`.
 
 ## Test
-To run the available tests, run the command
+If `test.sh` is available, then run the command
 
 ```
 bash ./test.sh
 ```
 
 ---
-[![PSC](http://www.andrew.cmu.edu/user/icaoberg/images/logos/psc.png)](http://www.psc.edu)
+Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved.
 
 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Pittsburgh Supercomputing Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
+
