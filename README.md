@@ -1,22 +1,7 @@
 # singularity-bamtools
-[![Build Status](https://www.travis-ci.com/icaoberg/singularity-bamtools.svg?branch=main)](https://www.travis-ci.com/icaoberg/singularity-bamtools)
+Singularity recipe for [bamtools](https://github.com/pezmaster31/bamtools).
 
-Source code repository can be found [here](https://github.com/trinityrnaseq/trinityrnaseq).
-
-## Building the container for Bridges (or similar)
-There is no need to build a container, because an image is already available from the Galaxy project, hence all you need to do is run
-
-```
-bash ./pull.sh
-```
-
-To avoid that pesky warning when building directly from a Docker container, run
-
-```
-bash ./build.sh
-```
-
-## Installing the container on Bridges (or similar)
+## Installing the container on Bridges 2
 Copy the
 
 * `SIF` file
@@ -24,17 +9,26 @@ Copy the
 
 to `/opt/packages/bamtools/2.5.1`.
 
-Copy the file `modulefile.lua` to `/opt/modules/bamtools` as `2.5.1.lua`.
+Copy the file `modulefile.lua` to `/opt/modulefiles/bamtools` as `2.5.1`.
 
-## Test
-If `test.sh` is available, then run the command
+## Building the image using the recipe
+
+### To build the image locally
+Run the script `build.sh` to build image locally.
 
 ```
-bash ./test.sh
+bash ./build.sh
+```
+
+### To build the image remotely
+Run the script `rbuild.sh` to build image locally.
+
+```
+bash ./build.sh
 ```
 
 ---
-Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved.
+Copyright © 2020-2021 Pittsburgh Supercomputing Center. All Rights Reserved.
 
-[icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Pittsburgh Supercomputing Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
+The [Biomedical Applications Group](https://www.psc.edu/biomedical-applications/) at the [Pittsburgh Supercomputing Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
 
