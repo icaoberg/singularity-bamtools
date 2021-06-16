@@ -1,4 +1,6 @@
 # singularity-bamtools
+![Status](https://github.com/pscedu/singularity-bamtools/actions/workflows/main.yml/badge.svg)
+
 Singularity recipe for [bamtools](https://github.com/pezmaster31/bamtools).
 
 ## Installing the container on Bridges 2
