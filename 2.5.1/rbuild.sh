@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Copyright © 2021 Pittsburgh Supercomputing Center.
+# All Rights Reserved.
+
 IMAGE=singularity-bamtools-2.5.1.sif
 DEFINITION=Singularity
 
