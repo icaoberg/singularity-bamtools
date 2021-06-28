@@ -1,3 +1,8 @@
+![Status](https://github.com/pscedu/singularity-bamtools/actions/workflows/main.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/pscedu/singularity-bamtools)
+![forks](https://img.shields.io/github/forks/pscedu/singularity-bamtools)
+![Stars](https://img.shields.io/github/stars/pscedu/singularity-bamtools)
+![License](https://img.shields.io/github/license/pscedu/singularity-bamtools)
 # singularity-bamtools
 ![Status](https://github.com/pscedu/singularity-bamtools/actions/workflows/main.yml/badge.svg)
 
